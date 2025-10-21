@@ -63,5 +63,5 @@ def update_ghseet_data(rides):
             print(f"Request error for ride ID {ride['id']}")
 
 
-ride_data = get_ride_details(scooter_id, api_token, 2000, "desc")
+ride_data = get_ride_details(scooter_id, api_token, 20, "desc")
 update_ghseet_data(ride_data)
